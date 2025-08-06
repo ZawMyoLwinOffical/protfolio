@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Abulkalam - Web Developer Portfolio</title>
+    <link rel="icon" href="https://img.icons8.com/ios-filled/50/FFD700/code.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="#home" class="logo">Abulkalam</a>
+            <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#home" data-translate="nav_home">Home</a></li>
+                <li><a href="#aboutme" data-translate="nav_about">About Me</a></li>
+                <li><a href="#skills" data-translate="nav_skills">Skills</a></li>
+                <li><a href="#projects" data-translate="nav_projects">Projects</a></li>
+                <li><a href="#contact" data-translate="nav_contact">Contact Us</a></li>
+            </ul>
+            <div style="display: flex; align-items: center;">
+                <button id="mode-toggle" class="mode-toggle" aria-label="Toggle dark/light mode">
+                    <img src="https://img.icons8.com/ios-filled/50/FFFFFF/moon-symbol.png" alt="Dark Mode Icon" class="icon-dark" />
+                    <img src="https://img.icons8.com/ios-filled/50/000000/sun--v1.png" alt="Light Mode Icon" class="icon-light" style="display:none;" />
+                </button>
+                <button id="lang-toggle" class="lang-toggle" aria-label="Toggle language">မြန်မာ</button>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h1 data-translate="hero_greeting">Hi, I'm <span class="highlight-text">Abulkalam</span></h1>
+            <h2 data-translate="hero_tagline">A Passionate Web Developer</h2>
+            <p data-translate="hero_description">
+                Crafting engaging and user-friendly digital experiences with a focus on clean code and innovative solutions.
+            </p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn primary-btn" data-translate="btn_view_work">View My Work</a>
+                <a href="#contact" class="btn secondary-btn" data-translate="btn_get_in_touch">Get In Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="aboutme" class="journey-section">
+        <div class="container">
+            <h2 data-translate="journey_heading">My Journey &amp; Experience</h2>
+            <div class="journey-box">
+                <p data-translate="journey_para1">
+                    I'm Abulkalam, a passionate web developer with <strong>one year of hands-on experience</strong> in crafting dynamic and user-centric web applications. My journey into web development began with a fascination for how digital interfaces come to life, evolving into a dedication to building robust and elegant solutions.
+                </p>
+                <p data-translate="journey_para2">
+                    Over the past year, I've had the privilege to collaborate with talented individuals and teams, contributing to diverse projects ranging from intuitive user interfaces to powerful back-end systems. My focus has always been on writing clean, efficient, and maintainable code, ensuring a seamless experience for users and developers alike.
+                </p>
+                <p data-translate="journey_para3">
+                    I thrive on continuous learning and adapting to new technologies, constantly seeking ways to enhance my skills and deliver cutting-edge solutions. Every project is an opportunity to learn, innovate, and exceed expectations.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h2 data-translate="skills_heading">My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <img src="https://img.icons8.com/?size=96&id=20909&format=png" alt="HTML5 Logo" />
+                    <h3 data-translate="skill_html">HTML5</h3>
+                </div>
+                <div class="skill-item">
+                    <img src="https://img.icons8.com/?size=96&id=21278&format=png" alt="CSS3 Logo" />
+                    <h3 data-translate="skill_css">CSS3</h3>
+                </div>
+                <div class="skill-item">
+                    <img src="https://brandeps.com/logo-download/J/JavaScript-logo-vector-01.svg" alt="JavaScript Logo" />
+                    <h3 data-translate="skill_js">JavaScript</h3>
+                </div>
+                <div class="skill-item">
+                    <img src="https://brandeps.com/logo-download/N/Node-JS-logo-vector-01.svg" alt="Node.js Logo" />
+                    <h3 data-translate="skill_node">Node.js</h3>
+                </div>
+                <div class="skill-item">
+                    <img src="https://brandeps.com/icon-download/P/Python-icon-vector-04.svg" alt="Python Logo" />
+                    <h3 data-translate="skill_python">Python</h3>
+                </div>
+                <div class="skill-item">
+                    <img src="data:image/png;base64,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" alt="AI/ML Basics Logo" />
+                    <h3 data-translate="skill_ai_ml">AI/ML Basics</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2 data-translate="projects_heading">My Recent Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="https://plus.unsplash.com/premium_photo-1681487870238-4a2dfddc6bcb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dG8lMjBkbyUyMGxpc3R8ZW58MHx8MHx8fDA%3D" alt="To-Do List App Image" />
+                    <div class="project-info">
+                        <h3 data-translate="project1_title">To-do-list</h3>
+                        <p data-translate="project1_desc">A simple and efficient to-do list application to help users manage their daily tasks and stay organized.</p>
+                        <a href="https://zawmyolwinoffical.github.io/To-do-list/" class="btn project-btn" data-translate="btn_view_details" target="_blank">View Details</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1545665277-5937489579f2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cG9ydGZvbGlvfGVufDB8fDB8fHww" alt="Portfolio Website Project Image" />
+                    <div class="project-info">
+                        <h3 data-translate="project2_title">Personal Portfolio Website</h3>
+                        <p data-translate="project2_desc">A dynamic and responsive portfolio showcasing my skills, projects, and professional journey as a web developer.</p>
+                        <a href="#home" class="btn project-btn" data-translate="btn_view_details">View Details</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHNlYXJjaHwzfHxyZXN0YXVyYW50JTIwd2Vic2l0ZXxlbnwwfHx8fHwxNzIwNDM2MzMxfDA&ixlib=rb-4.0.3&q=80&w=1080" alt="Restaurant Website Project Image" />
+                    <div class="project-info">
+                        <h3 data-translate="project3_title">Restaurant Website</h3>
+                        <p data-translate="project3_desc">A modern and inviting website for a restaurant, featuring online menu, table reservations, and contact information.</p>
+                        <a href="https://zawmyolwinoffical.github.io/Kalam-foods-delivery-project/" class="btn project-btn" data-translate="btn_view_details" target="_blank">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 data-translate="contact_heading">Get In Touch</h2>
+            <div class="contact-box">
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name" data-translate="form_name_label">Name</label>
+                        <input type="text" id="name" name="name" required data-translate-placeholder="form_name_placeholder" />
+                    </div>
+                    <div class="form-group">
+                        <label for="phone" data-translate="form_phone_label">Phone</label>
+                        <input type="tel" id="phone" name="phone" data-translate-placeholder="form_phone_placeholder" />
+                    </div>
+                    <div class="form-group">
+                        <label for="email" data-translate="form_email_label">Email</label>
+                        <input type="email" id="email" name="email" required data-translate-placeholder="form_email_placeholder" />
+                    </div>
+                    <div class="form-group">
+                        <label for="message" data-translate="form_message_label">Your Message</label>
+                        <textarea id="message" name="message" rows="6" data-translate-placeholder="form_message_placeholder"></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn" data-translate="form_submit_btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
